@@ -1,0 +1,46 @@
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  position: relative;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #444;
+}
+
+nav .navbar-brand {
+  color: #fff;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
+}
+
+nav .navbar-brand:hover {
+  color: #c21313;
+}
+
+nav .fa-camera {
+  color: #c21313;
+}
+
+nav .nav-link {
+  color: #fff;
+}
+
+nav .nav-link:hover {
+  color: #f90206;
+}
+
+nav .fa-bars {
+  padding: 0.6em;
+  color: #fff;
+}
+
+nav .active {
+  color: #f90206;
+}
+/*# sourceMappingURL=style.css.map */
