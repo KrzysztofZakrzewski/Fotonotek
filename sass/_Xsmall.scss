@@ -1,0 +1,21 @@
+@media (max-width: 375px) {
+	.header {
+		.title {
+			font-size: 2em;
+		}
+		.info {
+			font-size: 0.8em;
+		}
+		.btn {
+			padding: 0;
+			.motocycle {
+				width: 120px;
+				height: 40px;
+
+				p {
+					line-height: 40px;
+				}
+			}
+		}
+	}
+}
