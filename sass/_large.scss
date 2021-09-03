@@ -1,18 +1,20 @@
 @media (min-width: 992px) {
+	nav {
+		scroll-padding-top: 92px;
+	}
 	.header {
-
 		padding: 0;
 
 		.hero-img {
 			background-image: url('../img/head-big.jpg');
 		}
 
-		.title{
-            font-size: 3.7em;
-        }
-        .info {
-            font-size: 1.4em;
-        }
+		.title {
+			font-size: 3.7em;
+		}
+		.info {
+			font-size: 1.4em;
+		}
 
 		.btn {
 			padding: 0;
@@ -26,5 +28,13 @@
 				}
 			}
 		}
+	}
+
+	.about {
+		justify-content: space-around;
+	}
+
+	.about-hero {
+		background-image: url('../img/aboutHeroBIG.jpg');
 	}
 }

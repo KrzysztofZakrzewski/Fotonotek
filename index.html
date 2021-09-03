@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fotonek</title>
+    <title>Fotonotek</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,13 +16,13 @@
     
     <nav id="navbar-fotonotek" class="navbar navbar-expand-lg position-fixed top-0">
         <div class="container">
-          <a class="navbar-brand" href="#"><i class="fas fa-camera"></i> <span class="logo">Fotonek.pl</span></a>
+          <a class="navbar-brand" href="#"><i class="fas fa-camera"></i> <span class="logo">Fotonotek.pl</span></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <i class="fas fa-bars"></i>
           </button>
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav ms-auto">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link active" aria-current="page" href="#home">Home</a>
               <a class="nav-link" href="#about">O mnie</a>
               <a class="nav-link" href="#portfolio">Portfolio</a>
               <a class="nav-link" href="#contact">Kontakt</a>
@@ -31,14 +31,14 @@
           </div>
         </div>
       </nav>
-<header class="header">
+<header class="header" id="home">
   <div class="hero-img">
     <div class="hero-shadow"></div>
     <div class="hero-text">
-      <h1 class="title">Witam na <span class="red-text">Fotonek</span>.pl</h1>
+      <h1 class="title">Witam na <span class="red-text">Fotonotek</span>.pl</h1>
       <p class="info">gdzie połączyłem <span class="red-text">dwie</span> pasje</p>
       <a href="#about" type="button" class="btn">
-        <div class="motocycle"><p>Zapraszam </i></p> </div>
+        <div class="motocycle"><p>Zapraszam </p> </div>
       </a>
     </div> 
     <a href="#about">
@@ -47,11 +47,54 @@
   </div>
 </header>
 
-<div id="about"style="height: 100vh; background-color: yellow;"></div>
+
+<section id="about" class="about">
+  <div class="wrapper">
+    <h2 class="caption">O mnie</h2>
+    <div class="underline"></div>
+    <div class="columns">
+      
+      <div class="card">
+       <p class="about__title"><i class="fas fa-camera-retro"></i></p>
+       <p class="about__text">Jestem fotografem. To pierwsza z moich pasji, którą wciąż rozwijam. Jest tam co robić!</p>
+      </div>
+      <div class="card">
+        <p class="about__title"><i class="fas fa-motorcycle"></i></p>
+       <p class="about__text">Druga miłość to motoryzacja i motocykle.</p>
+      </div>
+      <div class="card">
+       <p class="about__title"><i class="fas fa-football-ball"></i></p>
+        <p class="about__text">Prowadzę też sesje fotograficzne różych eventów w tym także sportowych.</p>
+     </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="about-hero">
+  <div class="about-shadow"></div>
+  <div class="wrapper">
+    <h2 class="caption-shadow">Oprócz tego</h2>
+    <div class="underline"></div>
+    <div class="columns-shadow">
+      <div class="card">
+        <p class="about__title"><i class="fas fa-flag-checkered"></i></p>
+         <p class="about__text">Jestem testerem. Często testuje nowy sprzęt oraz motocykle znanych marek.</p>
+      </div>
+      <div class="card">
+        <p class="about__title"><i class="fab fa-youtube"></i></p>
+         <p class="about__text">Posiadam takarze kanał YouTube, na którym dziele się doświatczeniami i spostrzeżeniami z jazdy.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
 <div id="portfolio"style="height: 100vh; background-color: green;"></div>
 <div id="contact"style="height: 100vh; background-color: blue;"></div>
       
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>

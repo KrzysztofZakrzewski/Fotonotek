@@ -18,4 +18,27 @@
 			}
 		}
 	}
+
+	// ABOUT
+	.about {
+		.wrapper {
+
+
+			.columns {
+				.card {
+					margin: 0 .5em;
+					height: 150px;
+					width: 200px;
+
+					.about__title {
+						font-size: 2.4em;
+					}
+
+					.about__text {
+						font-size: 1em;
+					}
+				}
+			}
+		}
+	}
 }

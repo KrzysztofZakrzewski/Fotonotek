@@ -1,4 +1,4 @@
-@media (max-width: 375px) {
+@media (min-width: 320px) {
 	.header {
 		.title {
 			font-size: 2em;
@@ -14,6 +14,29 @@
 
 				p {
 					line-height: 40px;
+				}
+			}
+		}
+	}
+
+	// ABOUT
+	.about {
+		.wrapper {
+			// padding: 0em;
+
+			.columns {
+				.card {
+					margin: 0 0.5em;
+					height: 150px;
+					width: 200px;
+
+					.about__title {
+						font-size: 2.4em;
+					}
+
+					.about__text {
+						font-size: 0.7em;
+					}
 				}
 			}
 		}

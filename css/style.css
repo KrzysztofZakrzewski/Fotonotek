@@ -7,55 +7,79 @@
   padding: 0;
 }
 
+html {
+  scroll-padding-top: 76px;
+}
+
 body {
   position: relative;
   font-family: 'Montserrat', sans-serif;
-  background-color: #444;
+  background-color: #fff;
 }
 
 .red-text {
   color: #f90206;
 }
 
-nav {
+.shadow-bg {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.caption,
+.caption-shadow {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.underline {
+  margin: 0 auto 40px;
+  width: 60px;
+  height: 4px;
+  background-color: #f90206;
+}
+
+.navbar {
   z-index: 1;
+  -webkit-transition: background-color 0.6s;
+  transition: background-color 0.6s;
+  padding: 1.2em 0;
   width: 100%;
   text-transform: uppercase;
 }
 
-nav .logo {
+.navbar .logo {
   font-weight: bold;
 }
 
-nav .navbar-brand {
+.navbar .navbar-brand {
   text-transform: uppercase;
   color: #fff;
   -webkit-transition: color 0.3s;
   transition: color 0.3s;
 }
 
-nav .navbar-brand:hover {
+.navbar .navbar-brand:hover {
   color: #c21313;
 }
 
-nav .fa-camera {
+.navbar .fa-camera {
   color: #c21313;
 }
 
-nav .nav-link {
+.navbar .nav-link {
   color: #fff;
 }
 
-nav .nav-link:hover {
+.navbar .nav-link:hover {
   color: #f90206;
 }
 
-nav .fa-bars {
+.navbar .fa-bars {
   padding: 0.6em;
   color: #fff;
 }
 
-nav .active {
+.navbar .active {
   color: #f90206;
 }
 
@@ -68,7 +92,7 @@ nav .active {
 }
 
 .header .info {
-  font-size: 2em;
+  font-size: 1.4em;
 }
 
 .header .hero-img {
@@ -132,7 +156,7 @@ nav .active {
 }
 
 .header .btn .motocycle {
-  width: 200px;
+  width: 182px;
   height: 50px;
   -webkit-transition: 0.5s;
   transition: 0.5s;
@@ -159,71 +183,137 @@ nav .active {
   color: #f90206;
 }
 
-@media (max-width: 375px) {
-  .header .title {
-    font-size: 2em;
-  }
-  .header .info {
-    font-size: 0.8em;
-  }
-  .header .btn {
-    padding: 0;
-  }
-  .header .btn .motocycle {
-    width: 120px;
-    height: 40px;
-  }
-  .header .btn .motocycle p {
-    line-height: 40px;
-  }
+.about .wrapper {
+  padding: 2em;
 }
 
-@media (min-width: 375px) {
-  .header .title {
-    font-size: 2em;
-  }
-  .header .info {
-    font-size: .8em;
-  }
-  .header .btn {
-    padding: 0;
-  }
-  .header .btn .motocycle {
-    width: 150px;
-    height: 50px;
-  }
-  .header .btn .motocycle p {
-    line-height: 50px;
-  }
+.about .wrapper .columns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
-@media (min-width: 768px) {
-  .header {
-    padding: 0;
-  }
-  .header .hero-img {
-    background-image: url("../img/head-big.jpg");
-  }
-  .header .title {
-    font-size: 3em;
-  }
-  .header .info {
-    font-size: 1.2em;
-  }
-  .header .btn {
-    padding: 0;
-    font-size: 1.2em;
-  }
-  .header .btn .motocycle {
-    width: 175px;
-    height: 60px;
-  }
-  .header .btn .motocycle p {
-    line-height: 60px;
+.about .wrapper .columns .card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  margin: 1em 1em;
+  height: 150px;
+  width: 300px;
+  border: none;
+  -webkit-transition: color 0.2s;
+  transition: color 0.2s;
+}
+
+.about .wrapper .columns .card .about__title {
+  font-size: 2.4em;
+}
+
+.about .wrapper .columns .card .about__text {
+  font-size: 1em;
+}
+
+.about .wrapper .columns .card:hover {
+  color: #f90206;
+}
+
+.about-hero {
+  position: relative;
+  padding: 1em;
+  background-image: url("../img/aboutHeroSmall.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  z-index: 0;
+}
+
+.about-hero .about-shadow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: -5;
+}
+
+.about-hero .wrapper {
+  margin: 2em;
+}
+
+.about-hero .wrapper .caption-shadow {
+  color: #c0baba;
+}
+
+.about-hero .wrapper .columns-shadow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.about-hero .wrapper .columns-shadow .card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  margin: 1em 1em;
+  height: 150px;
+  width: 300px;
+  border: none;
+  background-color: transparent;
+}
+
+.about-hero .wrapper .columns-shadow .card .about__title {
+  font-size: 2.4em;
+  color: #c0baba;
+}
+
+.about-hero .wrapper .columns-shadow .card .about__text {
+  font-size: 1em;
+  color: #c0baba;
+}
+
+@media (min-width: 992px) {
+  nav {
+    scroll-padding-top: 82px;
   }
 }
 
 @media (min-width: 992px) {
+  nav {
+    scroll-padding-top: 92px;
+  }
   .header {
     padding: 0;
   }
@@ -246,6 +336,13 @@ nav .active {
   }
   .header .btn .motocycle p {
     line-height: 60px;
+  }
+  .about {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .about-hero {
+    background-image: url("../img/aboutHeroBIG.jpg");
   }
 }
 /*# sourceMappingURL=style.css.map */
