@@ -184,7 +184,7 @@ body {
 }
 
 .about .wrapper {
-  padding: 2em;
+  padding: 2em 6em;
 }
 
 .about .wrapper .columns {
@@ -254,7 +254,7 @@ body {
 }
 
 .about-hero .wrapper {
-  margin: 2em;
+  margin: 2em 16em;
 }
 
 .about-hero .wrapper .caption-shadow {
@@ -304,45 +304,50 @@ body {
   color: #c0baba;
 }
 
-@media (min-width: 992px) {
-  nav {
-    scroll-padding-top: 82px;
-  }
+.portfolio .wrapper {
+  margin: 2em 14em;
+}
+
+.portfolio .wrapper .slide {
+  position: relative;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.portfolio .wrapper .slide .portfolio__shadow {
+  position: absolute;
+  top: 60%;
+  width: 100%;
+  height: 10%;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.portfolio .wrapper .slide .portfolio__card {
+  width: 600px;
+}
+
+.portfolio .wrapper .slide .portfolio__card__card-body {
+  position: relative;
+}
+
+.portfolio .wrapper .slide .portfolio__card__card-body__card-title {
+  position: absolute;
 }
 
 @media (min-width: 992px) {
   nav {
-    scroll-padding-top: 92px;
-  }
-  .header {
-    padding: 0;
-  }
-  .header .hero-img {
-    background-image: url("../img/head-big.jpg");
-  }
-  .header .title {
-    font-size: 3.7em;
-  }
-  .header .info {
-    font-size: 1.4em;
-  }
-  .header .btn {
-    padding: 0;
-    font-size: 1.4em;
-  }
-  .header .btn .motocycle {
-    width: 200px;
-    height: 60px;
-  }
-  .header .btn .motocycle p {
-    line-height: 60px;
-  }
-  .about {
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-  }
-  .about-hero {
-    background-image: url("../img/aboutHeroBIG.jpg");
+    scroll-padding-top: 82px;
   }
 }
 /*# sourceMappingURL=style.css.map */

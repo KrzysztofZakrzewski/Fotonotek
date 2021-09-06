@@ -1,0 +1,38 @@
+<section id="portfolio" class="portfolio">
+
+  <div class="wrapper">
+    <h2 class="caption">Portfolio</h2>
+    <div class="underline"></div>
+
+
+    <div class="portfolio__slide">
+      <div class="portfolio__card">
+        <img src="..." class="card-img-top" alt="...">
+        <div class="portfolio__card-body">
+          <h5 class="portfolio__card-title">Card title</h5>
+          <p class="portfolio__card-text">Some quick example text to build on the card title and make up the bulk of the
+            card's content.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+      <div class="portfolio__card">
+        <img src="..." class="card-img-top" alt="...">
+        <div class="portfolio__card-body">
+          <h5 class="portfolio__card-title">Card title</h5>
+          <p class="portfolio__card-text">Some quick example text to build on the card title and make up the bulk of the
+            card's content.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+      <div class="portfolio__card">
+        <img src="..." class="card-img-top" alt="...">
+        <div class="portfolio__card-body">
+          <h5 class="portfolio__card-title">Card title</h5>
+          <p class="portfolio__card-text">Some quick example text to build on the card title and make up the bulk of the
+            card's content.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
