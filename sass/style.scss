@@ -9,7 +9,7 @@
 }
 
 html {
-	scroll-padding-top: 76px;
+	scroll-padding-top: 82px;
 }
 
 body {
@@ -163,7 +163,7 @@ body {
 
 .about {
 	.wrapper {
-		padding: 2em 6em;
+		padding: 2em 10px;
 
 		.columns {
 			display: flex;
@@ -200,12 +200,17 @@ body {
 
 .about-hero {
 	position: relative;
-	padding: 1em;
-	background-image: url('../img/aboutHeroSmall.jpg');
-	background-position: center;
-	background-size: cover;
-	background-attachment: fixed;
-	z-index: 0;
+
+	.about-hero-img {
+		position: relative;
+		padding: 1em;
+		background-image: url('../img/aboutHeroSmall.jpg');
+		background-position: center;
+		background-size: cover;
+		background-attachment: fixed;
+		z-index: 0;
+	}
+
 	.about-shadow {
 		position: absolute;
 		top: 0;
@@ -216,7 +221,7 @@ body {
 		z-index: -5;
 	}
 	.wrapper {
-		margin: 2em 16em;
+		margin: 2em 2em;
 		.caption-shadow {
 			color: $smoke-white;
 		}
@@ -233,7 +238,7 @@ body {
 				align-items: center;
 				align-content: center;
 				margin: 1em 1em;
-				height: 150px;
+				height: 200px;
 				width: 300px;
 				border: none;
 				background-color: transparent;
@@ -256,43 +261,224 @@ body {
 
 .portfolio {
 	.wrapper {
-		margin: 2em 14em;
+		margin: 2em 10px;
+		padding-bottom: 6em;
 
 		.slide {
-			position: relative;
-			height: 100vh;
 			display: flex;
 			flex-direction: row;
 			align-items: center;
 			justify-content: space-around;
+			flex-wrap: wrap;
 
-			.portfolio__shadow {
-				position: absolute;
-				top: 60%;
-				width: 100%;
-				height: 10%;
-				background-color: rgba(0, 0, 0, 0.6);
+			.card {
+				position: relative;
+				height: 500px;
+				width: 375px;
+				margin: 10px;
+				background-position: center;
+				background-size: cover;
+				text-align: center;
+				color: $white-color;
+				box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+					rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+					rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 			}
 
-			.portfolio__card {
-				width: 600px;
-				&__card-body {
-					position: relative;
-					&__card-title {
-						position: absolute;
+			.one {
+				background-image: url('../img/portfolio/concert-640a.jpg');
+				color: $smoke-white;
+			}
 
-					}
-				}
+			.one::before {
+				content: '';
+				position: absolute;
+				inset: 0;
+				background-color: rgba(0, 0, 0, 0.5);
+			}
+
+			.two {
+				background-image: url('../img/portfolio/portfolio-alt1.jpg');
+			}
+
+			.two::before {
+				content: '';
+				position: absolute;
+				inset: 0;
+				background-color: rgba(0, 0, 0, 0.5);
+			}
+
+			.three {
+				background-image: url('../img/portfolio/quarterback-73614_640.png');
+			}
+
+			.three::before {
+				content: '';
+				position: absolute;
+				inset: 0;
+				background-color: rgba(0, 0, 0, 0.5);
+			}
+
+			.portfolio-icon {
+				position: absolute;
+				top: 25%;
+				left: 50%;
+				transform: translate(-50%);
+				z-index: 0;
+			}
+
+			.portfolio-text {
+				position: absolute;
+				bottom: 25%;
+				left: 50%;
+				transform: translate(-50%);
+				z-index: 0;
+			}
+
+			.btn-portfolio {
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				z-index: 5;
+			}
+
+			h1 {
+				position: absolute;
+			}
+
+			// .portfolio__shadow {
+			// 	position: absolute;
+			// 	top: 60%;
+			// 	width: 100%;
+			// 	height: 10%;
+			// 	background-color: rgba(0, 0, 0, 0.6);
+			// }
+
+			// .portfolio__card {
+			// 	width: 600px;
+			// 	&__card-body {
+			// 		position: relative;
+			// 		&__card-title {
+			// 			position: absolute;
+
+			// 		}
+			// 	}
+			// }
+		}
+	}
+}
+
+.contact {
+	.contact-img {
+		position: relative;
+		padding: 2em;
+		background-image: url('../img/portfolio/weel.jpg');
+		background-position: center;
+		background-size: cover;
+		z-index: 0;
+	}
+
+	.contact-img::before {
+		content: '';
+		position: absolute;
+		inset: 0;
+		background-color: rgba(0, 0, 0, 0.8);
+		z-index: -5;
+	}
+
+	.caption {
+		color: $smoke-white;
+		z-index: 1;
+	}
+
+	.underline {
+		background-color: $smoke-white;
+	}
+
+	.wrapper-contact {
+		position: relative;
+		margin-top: 2em;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-around;
+		flex-wrap: wrap;
+
+		.card-contact {
+			position: relative;
+			font-size: 1.6em;
+			width: 400px;
+			height: 350px;
+			color: $smoke-white;
+			text-align: center;
+			.contact-icon {
+				margin-top: 10px;
 			}
 		}
+
+		.social {
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			justify-content: space-evenly;
+			font-size: 1.5em;
+		}
+
+		.formula {
+			font-size: 1em;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+
+		.contact__form-input {
+			width: 90%;
+			background-color: $darker-color;
+			color: $smoke-white;
+			border-radius: 5px;
+			border: none;
+		}
+
+		.contact__form-textarea {
+			height: 100%;
+			width: 90%;
+			background-color: $darker-color;
+			color: $smoke-white;
+			border-radius: 5px;
+			border: none;
+		}
+
+		.contact__form-btn {
+			padding: 5px 10px;
+			font-size: 1.5em;
+			border-radius: 5px;
+			color: $smoke-white;
+			background-color: transparent;
+		}
+	}
+}
+
+// footer
+
+.footer {
+	padding: 2em 1em;
+	border-top: 1px solid $darker-color;
+	text-align: center;
+	background-color: #222;
+	.footer__botom-text {
+		margin: 0;
+		color: $smoke-white;
 	}
 }
 
 // IMPOR @ MEDIA
 
-@media (min-width: 992px) {
-	nav {
-		scroll-padding-top: 82px;
+@media (min-width: 357px) {
+	.portfolio {
+		.wrapper {
+			margin: 2em 10px;
+			padding-bottom: 6em;
+		}
 	}
 }
 // @import './Xsmall';

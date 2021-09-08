@@ -8,7 +8,7 @@
 }
 
 html {
-  scroll-padding-top: 76px;
+  scroll-padding-top: 82px;
 }
 
 body {
@@ -184,7 +184,7 @@ body {
 }
 
 .about .wrapper {
-  padding: 2em 6em;
+  padding: 2em 10px;
 }
 
 .about .wrapper .columns {
@@ -235,6 +235,10 @@ body {
 
 .about-hero {
   position: relative;
+}
+
+.about-hero .about-hero-img {
+  position: relative;
   padding: 1em;
   background-image: url("../img/aboutHeroSmall.jpg");
   background-position: center;
@@ -254,7 +258,7 @@ body {
 }
 
 .about-hero .wrapper {
-  margin: 2em 16em;
+  margin: 2em 2em;
 }
 
 .about-hero .wrapper .caption-shadow {
@@ -288,7 +292,7 @@ body {
   -ms-flex-line-pack: center;
       align-content: center;
   margin: 1em 1em;
-  height: 150px;
+  height: 200px;
   width: 300px;
   border: none;
   background-color: transparent;
@@ -305,12 +309,11 @@ body {
 }
 
 .portfolio .wrapper {
-  margin: 2em 14em;
+  margin: 2em 10px;
+  padding-bottom: 6em;
 }
 
 .portfolio .wrapper .slide {
-  position: relative;
-  height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -323,31 +326,216 @@ body {
           align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
-.portfolio .wrapper .slide .portfolio__shadow {
-  position: absolute;
-  top: 60%;
-  width: 100%;
-  height: 10%;
-  background-color: rgba(0, 0, 0, 0.6);
-}
-
-.portfolio .wrapper .slide .portfolio__card {
-  width: 600px;
-}
-
-.portfolio .wrapper .slide .portfolio__card__card-body {
+.portfolio .wrapper .slide .card {
   position: relative;
+  height: 500px;
+  width: 375px;
+  margin: 10px;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  color: #fff;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+          box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
-.portfolio .wrapper .slide .portfolio__card__card-body__card-title {
+.portfolio .wrapper .slide .one {
+  background-image: url("../img/portfolio/concert-640a.jpg");
+  color: #c0baba;
+}
+
+.portfolio .wrapper .slide .one::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.portfolio .wrapper .slide .two {
+  background-image: url("../img/portfolio/portfolio-alt1.jpg");
+}
+
+.portfolio .wrapper .slide .two::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.portfolio .wrapper .slide .three {
+  background-image: url("../img/portfolio/quarterback-73614_640.png");
+}
+
+.portfolio .wrapper .slide .three::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.portfolio .wrapper .slide .portfolio-icon {
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+  z-index: 0;
+}
+
+.portfolio .wrapper .slide .portfolio-text {
+  position: absolute;
+  bottom: 25%;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+  z-index: 0;
+}
+
+.portfolio .wrapper .slide .btn-portfolio {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 5;
+}
+
+.portfolio .wrapper .slide h1 {
   position: absolute;
 }
 
-@media (min-width: 992px) {
-  nav {
-    scroll-padding-top: 82px;
+.contact .contact-img {
+  position: relative;
+  padding: 2em;
+  background-image: url("../img/portfolio/weel.jpg");
+  background-position: center;
+  background-size: cover;
+  z-index: 0;
+}
+
+.contact .contact-img::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: -5;
+}
+
+.contact .caption {
+  color: #c0baba;
+  z-index: 1;
+}
+
+.contact .underline {
+  background-color: #c0baba;
+}
+
+.contact .wrapper-contact {
+  position: relative;
+  margin-top: 2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.contact .wrapper-contact .card-contact {
+  position: relative;
+  font-size: 1.6em;
+  width: 400px;
+  height: 350px;
+  color: #c0baba;
+  text-align: center;
+}
+
+.contact .wrapper-contact .card-contact .contact-icon {
+  margin-top: 10px;
+}
+
+.contact .wrapper-contact .social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  font-size: 1.5em;
+}
+
+.contact .wrapper-contact .formula {
+  font-size: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact .wrapper-contact .contact__form-input {
+  width: 90%;
+  background-color: #444;
+  color: #c0baba;
+  border-radius: 5px;
+  border: none;
+}
+
+.contact .wrapper-contact .contact__form-textarea {
+  height: 100%;
+  width: 90%;
+  background-color: #444;
+  color: #c0baba;
+  border-radius: 5px;
+  border: none;
+}
+
+.contact .wrapper-contact .contact__form-btn {
+  padding: 5px 10px;
+  font-size: 1.5em;
+  border-radius: 5px;
+  color: #c0baba;
+  background-color: transparent;
+}
+
+.footer {
+  padding: 2em 1em;
+  border-top: 1px solid #444;
+  text-align: center;
+  background-color: #222;
+}
+
+.footer .footer__botom-text {
+  margin: 0;
+  color: #c0baba;
+}
+
+@media (min-width: 357px) {
+  .portfolio .wrapper {
+    margin: 2em 10px;
+    padding-bottom: 6em;
   }
 }
 /*# sourceMappingURL=style.css.map */
