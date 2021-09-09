@@ -47,6 +47,10 @@ body {
   text-transform: uppercase;
 }
 
+.navbar .container {
+  padding: 0;
+}
+
 .navbar .logo {
   font-weight: bold;
 }
@@ -239,7 +243,7 @@ body {
 
 .about-hero .about-hero-img {
   position: relative;
-  padding: 1em;
+  padding: 70px;
   background-image: url("../img/aboutHeroSmall.jpg");
   background-position: center;
   background-size: cover;
@@ -258,7 +262,7 @@ body {
 }
 
 .about-hero .wrapper {
-  margin: 2em 2em;
+  margin: 2em auto;
 }
 
 .about-hero .wrapper .caption-shadow {
@@ -338,14 +342,13 @@ body {
   background-position: center;
   background-size: cover;
   text-align: center;
-  color: #fff;
+  color: #c0baba;
   -webkit-box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
           box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
 .portfolio .wrapper .slide .one {
   background-image: url("../img/portfolio/concert-640a.jpg");
-  color: #c0baba;
 }
 
 .portfolio .wrapper .slide .one::before {
@@ -379,27 +382,29 @@ body {
 
 .portfolio .wrapper .slide .portfolio-icon {
   position: absolute;
-  top: 25%;
+  top: 45%;
   left: 50%;
-  -webkit-transform: translate(-50%);
-          transform: translate(-50%);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   z-index: 0;
-}
-
-.portfolio .wrapper .slide .portfolio-text {
-  position: absolute;
-  bottom: 25%;
-  left: 50%;
-  -webkit-transform: translate(-50%);
-          transform: translate(-50%);
-  z-index: 0;
+  font-size: 4em;
 }
 
 .portfolio .wrapper .slide .btn-portfolio {
   position: absolute;
-  width: 100%;
-  height: 100%;
+  width: 200px;
+  height: 60px;
+  left: 50%;
+  bottom: 10%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   z-index: 5;
+  border: 3px solid #c0baba;
+  border-radius: 8px;
+  text-decoration: none;
+  color: #c0baba;
+  font-size: 1.7em;
+  line-height: 50px;
 }
 
 .portfolio .wrapper .slide h1 {
@@ -408,7 +413,7 @@ body {
 
 .contact .contact-img {
   position: relative;
-  padding: 2em;
+  padding: 1em;
   background-image: url("../img/portfolio/weel.jpg");
   background-position: center;
   background-size: cover;
@@ -464,6 +469,14 @@ body {
   margin-top: 10px;
 }
 
+.contact .wrapper-contact .first-card {
+  line-height: 60px;
+}
+
+.contact .wrapper-contact .first-card .contact-icon {
+  font-size: 1.6em;
+}
+
 .contact .wrapper-contact .social {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -513,6 +526,8 @@ body {
 }
 
 .contact .wrapper-contact .contact__form-btn {
+  margin: 1em;
+  margin-bottom: 0;
   padding: 5px 10px;
   font-size: 1.5em;
   border-radius: 5px;
@@ -534,7 +549,7 @@ body {
 
 @media (min-width: 357px) {
   .portfolio .wrapper {
-    margin: 2em 10px;
+    margin: 2em;
     padding-bottom: 6em;
   }
 }
