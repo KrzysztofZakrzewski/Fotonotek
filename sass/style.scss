@@ -57,11 +57,18 @@ body {
 	}
 	width: 100%; // OR put 100% - w-100 in bootstrap class html
 	text-transform: uppercase;
+
 	.navbar-brand {
+		margin-left: 1em;
 		text-transform: uppercase;
 		color: $white-color;
 		transition: color 0.3s; // it will be not important enyway because I wont put logo inside. Just fun.
 	}
+
+	.navbar-toggler {
+		margin-right: 2em;
+	}
+
 	.navbar-brand:hover {
 		color: rgb(194, 19, 19);
 	}
@@ -78,7 +85,7 @@ body {
 	}
 
 	.fa-bars {
-		padding: 0.6em;
+		padding: 0.2em;
 		color: $white-color;
 	}
 
@@ -92,7 +99,7 @@ body {
 .header {
 	color: $white-color;
 	.title {
-		font-size: 3em;
+		font-size: 2em;
 	}
 
 	.info {
@@ -273,7 +280,7 @@ body {
 			display: flex;
 			flex-direction: row;
 			align-items: center;
-			justify-content: space-around;
+			justify-content: space-evenly;
 			flex-wrap: wrap;
 
 			.card {
@@ -288,6 +295,11 @@ body {
 				box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
 					rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
 					rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+				transition: transform 0.3s;
+			}
+
+			.card:hover {
+				transform: scale(0.96);
 			}
 
 			.one {
@@ -376,6 +388,8 @@ body {
 	}
 }
 
+// CONTACT
+
 .contact {
 	.contact-img {
 		position: relative;
@@ -428,7 +442,7 @@ body {
 		.first-card {
 			line-height: 60px;
 
-			.contact-icon{
+			.contact-icon {
 				font-size: 1.6em;
 			}
 		}
@@ -495,7 +509,7 @@ body {
 @media (min-width: 357px) {
 	.portfolio {
 		.wrapper {
-			margin: 2em ;
+			margin: 2em;
 			padding-bottom: 6em;
 		}
 	}

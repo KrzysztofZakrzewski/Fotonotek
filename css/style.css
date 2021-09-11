@@ -56,10 +56,15 @@ body {
 }
 
 .navbar .navbar-brand {
+  margin-left: 1em;
   text-transform: uppercase;
   color: #fff;
   -webkit-transition: color 0.3s;
   transition: color 0.3s;
+}
+
+.navbar .navbar-toggler {
+  margin-right: 2em;
 }
 
 .navbar .navbar-brand:hover {
@@ -79,7 +84,7 @@ body {
 }
 
 .navbar .fa-bars {
-  padding: 0.6em;
+  padding: 0.2em;
   color: #fff;
 }
 
@@ -92,7 +97,7 @@ body {
 }
 
 .header .title {
-  font-size: 3em;
+  font-size: 2em;
 }
 
 .header .info {
@@ -328,8 +333,9 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
@@ -345,6 +351,15 @@ body {
   color: #c0baba;
   -webkit-box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
           box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+}
+
+.portfolio .wrapper .slide .card:hover {
+  -webkit-transform: scale(0.96);
+          transform: scale(0.96);
 }
 
 .portfolio .wrapper .slide .one {
