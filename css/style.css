@@ -340,6 +340,25 @@ body {
       flex-wrap: wrap;
 }
 
+.portfolio .wrapper .slide .slick-arrow {
+  position: absolute;
+  padding: .5em;
+  background-color: transparent;
+  color: rgba(34, 14, 14, 0.863);
+  width: 100px;
+  border-radius: 8px;
+}
+
+.portfolio .wrapper .slide .slick-next {
+  bottom: -70px;
+  right: 500px;
+}
+
+.portfolio .wrapper .slide .slick-prev {
+  bottom: -70px;
+  left: 500px;
+}
+
 .portfolio .wrapper .slide .card {
   position: relative;
   height: 500px;

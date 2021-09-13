@@ -283,6 +283,26 @@ body {
 			justify-content: space-evenly;
 			flex-wrap: wrap;
 
+			.slick-arrow{
+				position: absolute;
+				padding: .5em;
+				background-color: transparent;
+				color: $dark-color;
+				width: 100px;
+				border-radius: 8px;
+			}
+
+			.slick-next {
+				bottom: -70px;
+				right: 500px;
+			}
+
+			.slick-prev{
+				bottom: -70px;
+				left: 500px;
+			}
+
+
 			.card {
 				position: relative;
 				height: 500px;
@@ -514,6 +534,11 @@ body {
 		}
 	}
 }
+
+@media (min-width: 992px) {
+	
+}
+
 // @import './Xsmall';
 // @import './small';
 // @import './medium';
