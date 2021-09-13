@@ -411,9 +411,11 @@ body {
 // CONTACT
 
 .contact {
+	position: relative;
 	.contact-img {
 		position: relative;
 		padding: 1em;
+		padding-top: 3em;
 		background-image: url('../img/portfolio/weel.jpg');
 		background-position: center;
 		background-size: cover;
@@ -457,6 +459,7 @@ body {
 			.contact-icon {
 				margin-top: 10px;
 			}
+		
 		}
 
 		.first-card {
@@ -467,13 +470,42 @@ body {
 			}
 		}
 
+		.social-wrapper {
+			display: flex;
+			align-items: center;
+		}
+
 		.social {
 			display: flex;
 			flex-direction: row;
 			align-items: center;
 			justify-content: space-evenly;
-			font-size: 1.5em;
+			font-size: 1.7em;
 		}
+
+		a{
+			color: $smoke-white;
+			transition: .3s;
+		}
+
+		a:nth-child(1):hover {
+			color: $facebook-color;
+			transform: scale(1.1);
+		}
+
+		a:nth-child(2):hover {
+			color: $finish-contact;
+			transform: scale(1.1);
+		}
+
+		a:nth-child(3):hover {
+			color: $instagram-color;
+			transform: scale(1.1);
+		}
+
+		// a:hover {
+
+		// }
 
 		.formula {
 			font-size: 1em;
@@ -509,6 +541,7 @@ body {
 			background-color: transparent;
 		}
 	}
+
 }
 
 // footer

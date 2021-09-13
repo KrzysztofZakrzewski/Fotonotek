@@ -445,9 +445,14 @@ body {
   position: absolute;
 }
 
+.contact {
+  position: relative;
+}
+
 .contact .contact-img {
   position: relative;
   padding: 1em;
+  padding-top: 3em;
   background-image: url("../img/portfolio/weel.jpg");
   background-position: center;
   background-size: cover;
@@ -511,6 +516,15 @@ body {
   font-size: 1.6em;
 }
 
+.contact .wrapper-contact .social-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .contact .wrapper-contact .social {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -525,7 +539,31 @@ body {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  font-size: 1.5em;
+  font-size: 1.7em;
+}
+
+.contact .wrapper-contact a {
+  color: #c0baba;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.contact .wrapper-contact a:nth-child(1):hover {
+  color: #3b5998;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.contact .wrapper-contact a:nth-child(2):hover {
+  color: #f02b2fcb;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.contact .wrapper-contact a:nth-child(3):hover {
+  color: #d6249f;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .contact .wrapper-contact .formula {
