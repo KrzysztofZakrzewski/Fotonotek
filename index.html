@@ -16,7 +16,7 @@
   <script src="https://kit.fontawesome.com/9667a04066.js" crossorigin="anonymous"></script>
 </head>
 
-<body data-bs-spy="scroll" data-bs-target="#navbar-fotonotek">
+<body data-bs-spy="scroll" data-bs-target="#navbar-fotonotek" >
 
   <nav id="navbar-fotonotek" class="navbar navbar-expand-lg position-fixed top-0">
     <div class="container">
@@ -35,17 +35,16 @@
       </div>
     </div>
   </nav>
+
+
   <header class="header" id="home">
     <div class="hero-img">
       <div class="hero-shadow"></div>
       <div class="hero-text">
-        <h1 class="title">Witam na <span class="red-text">Fotonotek</span>.pl</h1>
-        <p class="info">gdzie połączyłem <span class="red-text">dwie</span> pasje</p>
-        <a href="#about" type="button" class="btn">
-          <div class="motocycle">
-            <p>Zapraszam </p>
-          </div>
-        </a>
+        <h1 class="title" data-aos="fade-up">Witam na <span class="red-text">Fotonotek</span>.pl</h1>
+        <p class="info" data-aos="fade-up" data-aos-delay="400">gdzie połączyłem <span class="red-text">dwie</span> pasje</p>
+       <a href="#about" type="button" class="btn"  data-aos="fade-up" data-aos-delay="600">Zapraszam</a>
+
       </div>
       <a href="#about">
         <i class="fas fa-chevron-down"></i>
@@ -54,23 +53,23 @@
   </header>
   <main>
 
-    <section id="about" class="about">
+    <section id="about" class="about" >
       <div class="wrapper">
-        <h2 class="caption">O mnie</h2>
+        <h2 class="caption" >O mnie</h2>
         <div class="underline"></div>
         <div class="columns">
 
-          <div class="card">
-            <p class="about__title"><i class="fas fa-camera-retro"></i></p>
+          <div class="card" data-aos="fade-up" data-aos-delay="100">
+            <p class="about__title" ><i class="fas fa-camera-retro"></i></p>
             <p class="about__text">Jestem fotografem. To pierwsza z moich pasji, którą wciąż rozwijam. Jest tam co
               robić!
             </p>
           </div>
-          <div class="card">
-            <p class="about__title"><i class="fas fa-motorcycle"></i></p>
+          <div class="card" data-aos="fade-up" data-aos-delay="200">
+            <p class="about__title"><i class="fas fa-motorcycle" data-aos="fade-right" data-aos-delay="1300"></i></p>
             <p class="about__text">Druga miłość to motoryzacja i motocykle.</p>
           </div>
-          <div class="card">
+          <div class="card" data-aos="fade-up" data-aos-delay="300">
             <p class="about__title"><i class="fas fa-football-ball"></i></p>
             <p class="about__text">Prowadzę też sesje fotograficzne różych eventów w tym także sportowych.</p>
           </div>
@@ -84,11 +83,11 @@
           <h2 class="caption-shadow">Oprócz tego</h2>
           <div class="underline"></div>
           <div class="columns-shadow">
-            <div class="card">
+            <div class="card" data-aos="fade-up" data-aos-delay="400">
               <p class="about__title"><i class="fas fa-flag-checkered"></i></p>
               <p class="about__text">Jestem testerem. Często testuje nowy sprzęt oraz motocykle znanych marek.</p>
             </div>
-            <div class="card">
+            <div class="card" data-aos="fade-up" data-aos-delay="500">
               <p class="about__title"><i class="fab fa-youtube"></i></p>
               <p class="about__text">Posiadam takarze kanał YouTube, na którym dziele się doświatczeniami i
                 spostrzeżeniami
@@ -100,8 +99,8 @@
     </section>
 
 
-    <div class="portfolio" id="portfolio"></div>
-    <section class="portfolio">
+
+    <section class="portfolio" id="portfolio">
       <div class="wrapper">
         <h2 class="caption">Portfolio</h2>
         <div class="underline"></div>
@@ -167,6 +166,7 @@
         </div>
       </div>
     </section>
+ 
     <!-- <div id="contact" style="height: 100vh; background-color: blue;"></div> -->
     <section class="contact" id="contact">
       <div class="contact-img">
@@ -183,7 +183,9 @@
             <p class="contact-text">+48 787 415</p>
           </div>
 
-            <div class="card-contact">
+
+       
+            <div class="card-contact second-card">
               <p class="contact-icon">Solcial media</p>
               <div class="underline"></div>
               <div class="social">
@@ -194,8 +196,8 @@
                 <a class="contact-icon" href="https://www.instagram.com/lukasz_fotonotek"><i
                     class="fab fa-instagram"></i></a>
               </div>
-            </div>
-          
+            
+          </div>
           <div class="card-contact formula">
 
             <label for="name" class="contact__form-label">Imię i nazwisko:</label>
@@ -205,7 +207,7 @@
 
             <label for="msg" class="contact__form-label">Wiadomość:</label>
             <textarea id="msg" class="contact__form-textarea"></textarea>
-            <button type="submit" class="contact__form-btn">Wyślij <i class="fas fa-motorcycle"></i></button>
+            <button type="submit" class="contact__form-btn">Wyślij <i class="fas fa-motorcycle moto"></i></button>
           </div>
 
 
@@ -227,8 +229,19 @@
     crossorigin="anonymous"></script>
   <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
   <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+  <!-- <script>
+    AOS.init({
+      startEvent: 'DOMContentLoaded',
+            offset: 200,
+            once: true
+    });
+  </script> -->
   <!-- <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script> -->
   <!-- <script src="js/slicksettings.js"></script> -->
+  <script src="js/aos.js"></script>
   <script src="js/script.js"></script>
 </body>
 

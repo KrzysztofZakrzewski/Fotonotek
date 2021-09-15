@@ -1,5 +1,6 @@
 const footerYear = document.querySelector('.footer__year');
 
+
 document.addEventListener('DOMContentLoaded', function () {
 	const nav = document.querySelector('.navbar');
 
@@ -18,5 +19,3 @@ const handleCurrentYear = () => {
 	const year = new Date().getFullYear();
 	footerYear.innerText = year;
 };
-
-handleCurrentYear();
