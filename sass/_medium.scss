@@ -3,20 +3,13 @@
 		.hero-img {
 			background-image: url('../img/head-big.jpg');
 		}
-
 	}
 
-	ABOUT
-	
-
-	.about {
-
+	ABOUT .about {
 		.wrapper {
-
-
 			.columns {
 				.card {
-					margin: 0 .5em;
+					margin: 0 0.5em;
 					height: 150px;
 					width: 200px;
 
@@ -32,14 +25,20 @@
 		}
 	}
 
-	CONTACT
+	.about-hero {
+		.fa-chevron-down {
+			@include chevron;
+		}
+		position: relative;
 
+		.about-hero-img {
+			background-image: url('../img/aboutHeroBIG.jpg');
+		}
+	}
+	// CONTACT 
 	.contact {
 		.contact-img {
-			background-image: url('../img/weel-smal.jpg');
-			background-position: center;
-			background-size: cover;
-			z-index: 0;
+			background-image: url('../img/weel-big.jpg');
 		}
 	}
 }
