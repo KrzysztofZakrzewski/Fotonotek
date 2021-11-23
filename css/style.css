@@ -180,9 +180,9 @@ body {
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-  bottom: 2rem;
+  bottom: 20px;
   color: #f90206;
-  font-size: 2.5em;
+  font-size: 60px;
 }
 
 .about {
@@ -246,14 +246,14 @@ body {
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-  bottom: 2rem;
+  bottom: 20px;
   color: #f90206;
-  font-size: 2.5em;
+  font-size: 60px;
 }
 
 .about-hero .about-hero-img {
   position: relative;
-  padding: 40px 0;
+  padding: 60px 0;
   background-image: url("../img/aboutHeroSmall.jpg");
   background-position: center;
   background-size: cover;
@@ -301,7 +301,7 @@ body {
           align-items: center;
   -ms-flex-line-pack: center;
       align-content: center;
-  margin: 1em 1em;
+  margin: 16px 16px;
   height: 200px;
   width: 300px;
   border: none;
@@ -319,12 +319,23 @@ body {
 }
 
 .portfolio {
+  position: relative;
   padding-top: 0;
 }
 
+.portfolio .fa-chevron-down {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  bottom: 20px;
+  color: #f90206;
+  font-size: 60px;
+}
+
 .portfolio .wrapper {
-  margin: 2em 10px;
-  padding-bottom: 6em;
+  margin: 32px 10px;
+  padding-bottom: 96px;
 }
 
 .portfolio .wrapper .slide {
@@ -509,9 +520,9 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
   line-height: 60px;
 }
 
@@ -523,12 +534,29 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
 }
 
-.contact .wrapper-contact .second-card .contact-icon-social {
+.contact .wrapper-contact .second-card .contact-icon {
+  margin-bottom: 10px;
+}
+
+.contact .wrapper-contact .third-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+}
+
+.contact .wrapper-contact .third-card .contact-icon-social {
   font-size: 28px;
 }
 
@@ -696,9 +724,9 @@ body {
     left: 50%;
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
-    bottom: 2rem;
+    bottom: 20px;
     color: #f90206;
-    font-size: 2.5em;
+    font-size: 60px;
   }
   .about-hero .about-hero-img {
     background-image: url("../img/aboutHeroBIG.jpg");

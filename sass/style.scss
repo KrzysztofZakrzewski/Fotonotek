@@ -86,7 +86,7 @@ body {
 	.nav-link:hover {
 		color: $finish-color;
 	}
-
+	// nie wiem co to
 	.fa-bars {
 		padding: 0.2em;
 		color: $white-color;
@@ -150,22 +150,6 @@ body {
 		font-size: 16px;
 		color: $white-color;
 		overflow: hidden;
-
-		// .motocycle {
-		// 	width: 182px;
-		// 	height: 50px;
-		// 	transition: 0.5s;
-
-		// 	p {
-		// 		line-height: 50px;
-		// 		margin: 0;
-		// 	}
-		// }
-		// .motocycle:hover {
-		// 	background-color: $white-color;
-		// 	color: rgb(71, 51, 51);
-		// 	font-weight: bold;
-		// }
 	}
 
 	.btn:hover {
@@ -227,7 +211,7 @@ body {
 
 	.about-hero-img {
 		position: relative;
-		padding: 40px 0;
+		padding: 60px 0;
 		background-image: url('../img/aboutHeroSmall.jpg');
 		background-position: center;
 		background-size: cover;
@@ -246,8 +230,6 @@ body {
 	}
 
 	.wrapper {
-
-
 		.caption-shadow {
 			color: $smoke-white;
 		}
@@ -264,7 +246,7 @@ body {
 				justify-content: center;
 				align-items: center;
 				align-content: center;
-				margin: 1em 1em;
+				margin: 16px 16px;
 				height: 200px;
 				width: 300px;
 				border: none;
@@ -287,11 +269,16 @@ body {
 // PROTFOLIO
 
 .portfolio {
+	position: relative;
 	padding-top: 0;
+	
+	.fa-chevron-down {
+		@include chevron;
+	}
 
 	.wrapper {
-		margin: 2em 10px;
-		padding-bottom: 6em;
+		margin: 32px 10px;
+		padding-bottom: 96px;
 
 		.slide {
 			display: flex;
@@ -447,14 +434,23 @@ body {
 		.first-card {
 			display: flex;
 			flex-direction: column;
-			justify-content: center;
+			justify-content: start;
 			line-height: 60px;
 		}
 
 		.second-card {
 			display: flex;
 			flex-direction: column;
-			justify-content: center;
+			justify-content: start;
+			.contact-icon {
+				margin-bottom: 10px;
+			}
+		}
+
+		.third-card {
+			display: flex;
+			flex-direction: column;
+			justify-content: start;
 
 			.contact-icon-social {
 				font-size: 28px;
